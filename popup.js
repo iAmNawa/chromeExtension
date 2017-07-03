@@ -1,6 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-  var checkPageButton = document.querySelector('#checkPage');
-  checkPageButton.addEventListener('click', function() {
+document.querySelector('#checkPage').addEventListener('click', function() {
 
     //chrome.tabs.executeScript(integer tabId, object details, function callback)
     chrome.tabs.executeScript(null,{code:`
