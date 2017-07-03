@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     //chrome.tabs.executeScript(integer tabId, object details, function callback)
     chrome.tabs.executeScript(null,{code:`
-      var h1s = document.querySelectorAll('h1'), l = h1s.length
+      var h1s = document.querySelectorAll('div'), l = h1s.length
       while(l--)
        h1s[l].style.color = 'red';
       `})
